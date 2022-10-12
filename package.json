@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/eddiefigueroa18/operation-lizes-moi/issues"
   },
-  "homepage": "https://github.com/eddiefigueroa18/operation-lizes-moi#readme"
+  "homepage": "https://github.com/eddiefigueroa18/operation-lizes-moi#readme",
+  "dependencies": {
+    "inquirer": "^9.1.3"
+  }
 }
