@@ -1,0 +1,19 @@
+{
+  "name": "operation-lizes-moi",
+  "version": "1.0.0",
+  "description": "README Generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eddiefigueroa18/operation-lizes-moi.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eddiefigueroa18/operation-lizes-moi/issues"
+  },
+  "homepage": "https://github.com/eddiefigueroa18/operation-lizes-moi#readme"
+}
