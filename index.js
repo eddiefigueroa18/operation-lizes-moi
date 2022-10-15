@@ -88,5 +88,17 @@ inquirer
             type: "input",
             message: "Add contact information ",
             name: "contact",
-        }
+            validate: async (input) => {
+                if (input) {
+                    return true 
+                } else {
+                    console.log("It would be in your favor to add contact information ");
+                    return false
+                }
+            }
+        },
+
+//==================================================================================//
+        function writeToFile(generateMarkdown, data) {}
+
     ];
