@@ -1,9 +1,16 @@
-const inquirer = require ("inquirer");
+//Variables 
+const inquirer = require ('inquirer');
 const fs = require ('fs');
+// const generate = require('./generateMarkdown');
+
 // const { default: CheckboxPrompt } = require("inquirer/lib/prompts/checkbox");
 
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
+
+//Array of questions for user input 
 inquirer
-    const leQuestion = [
+        .prompt([
         {
             type: "input",
             message: "What is the title of your project? ",
@@ -82,8 +89,7 @@ inquirer
                     return false
                 }
             }
-            },
-    
+        },
         {
             type: "input",
             message: "Add contact information ",
@@ -97,8 +103,20 @@ inquirer
                 }
             }
         },
+    ])
+    // .then((answers) => {
+    //     console.log(answers)
+    //   })
 
 //==================================================================================//
-        function writeToFile(generateMarkdown, data) {}
+        // function writeToFile(generateMarkdown, data) {}
 
-    ];
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
+//Create an init function to initialize the application
+// // init (leQuestion);
+// init = () => {
+//     inquirer.prompt(leQuestion);
+// }
+
+// // //Function call to initialize the app
+// init ();

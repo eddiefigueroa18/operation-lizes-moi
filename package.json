@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
-    "type": "git",
+    "type": "module",
     "url": "git+https://github.com/eddiefigueroa18/operation-lizes-moi.git"
   },
   "author": "",
@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/eddiefigueroa18/operation-lizes-moi#readme",
   "dependencies": {
-    "inquirer": "^9.1.3"
+    "inquirer": "^8.2.4"
   }
 }
