@@ -1,10 +1,9 @@
 //Variables 
 const inquirer = require ('inquirer');
 const fs = require ('fs');
-// const generate = require('./generateMarkdown');
+const generate = require('./generateMarkdown');
 
 // const { default: CheckboxPrompt } = require("inquirer/lib/prompts/checkbox");
-
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
 
@@ -108,15 +107,22 @@ inquirer
     //     console.log(answers)
     //   })
 
-//==================================================================================//
-        // function writeToFile(generateMarkdown, data) {}
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
+//function to write the README file
+function writeToFile(data) {
+    fs.writeFile("./generated/README.md", generate(data), (err)=> {
+        err ? console.error(err) : console.log('File generated')
+    })
+};
 
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
 //Create an init function to initialize the application
-// // init (leQuestion);
-// init = () => {
-//     inquirer.prompt(leQuestion);
-// }
-
-// // //Function call to initialize the app
+init = () => {
+    inquirer.prompt()
+    .then(data =>{
+        writeToFile(data)
+    });
+};
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
+// //Function call to initialize the app
 // init ();

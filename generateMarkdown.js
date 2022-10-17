@@ -1,15 +1,27 @@
+//Create a function that returns a license badge based on which license is passed in
+//If there is no license, return and empty string
+// function $renderLicenseBadge(license) {}
+
+
+
+
 //Create a function that generates the markdown for a README
 function generateMarkdown(data) {
     return `
 
-    #{data.title}
-    //$renderLicenseBadge(data.license)}
+    # ${data.title}
 
     ## Description
     ${data.description}
 
     ## Table of Contents 
     ${data.tableOfContents}
+    * [Installation](#installation)
+    * [Usage](#usage)
+    * [Contributions](#contributions)
+    * [Test](#tests)
+    * [License](#license)
+    * [Contact](#contact)
 
     ## Installation
     ${data.installation}
@@ -23,11 +35,12 @@ function generateMarkdown(data) {
     ## Tests
     ${data.tests}
 
-    ## License  
+    ## License 
+    ${data.license} 
     //enter license function here
 
     ## Contact
-    ${data.contact}`    
+    ${data.contact}`;    
 }
 
 module.exports = generateMarkdown;
