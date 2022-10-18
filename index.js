@@ -36,11 +36,11 @@ inquirer
                 }
             }
         },
-        {
-            type: "input",
-            message: "Add table of contents ",
-            name: "tableOfContents",
-        },
+        // {
+        //     type: "input",
+        //     message: "Add table of contents ",
+        //     name: "tableOfContents",
+        // },
         {
             type: "input",
             message: "Add Installation instructions/requirements ",
@@ -58,7 +58,7 @@ inquirer
         },
         {
             type: "input",
-            message: "How do you test this application? ",
+            message: "Describe how you test this application ",
             name: "tests",
         },
         {
@@ -66,37 +66,51 @@ inquirer
             message: "Add a License ",
             name: "license",
             choices: [
-                'Apache License ',
-                'GNU General Public License ',
+                'Apache License',
                 'MIT License',
-                'BSD 2-Clause "Simplified" License',
-                'BSD 3-Clause "New" or "Revised" License',
-                'Boost Software License ',
+                'BSD 2-Clause License',
+                'BSD 3-Clause License',
+                'Boost Software License',
                 'Creative Commons Zero v1.0 Universal',
                 'Eclipse Public License',
-                'GNU Affero General Public License',
-                'GNU General Public License',
-                'GNU Lesser General Public License',
                 'Mozilla Public License',
                 'The Unlicense',
+                'Other'
             ],
-            validate: async (list) => {
-                if (Checkbox.length === 1) {
-                    return true
-                } else {
-                    console.log("Please select at least one license ");
-                    return false
-                }
-            }
+            // validate: async (list) => {
+            //     if (Checkbox.length === 1) {
+            //         return true
+            //     } else {
+            //         console.log("Please select at least one license ");
+            //         return false
+            //     }
+            // }
         },
         {
             type: "input",
-            message: "Enter your Github account username ",
+            message: "Enter your Github username ",
             name: "github",
-        }, {
+            validate: async (input) => {
+                if (input) {
+                    return true 
+                } else {
+                    console.log("Please enter github username ");
+                    return false
+                }
+            }
+        }, 
+        {
             type: "input",
             message: "Enter your email ",
             name: "email",
+            validate: async (input) => {
+                if (input) {
+                    return true 
+                } else {
+                    console.log("Please enter a good email ");
+                    return false
+                }
+            }
         },
     ])
 
@@ -106,7 +120,7 @@ inquirer
 .then((answers) => {
     console.log(answers)
     fs.writeFile('./generated/README.md', generate(answers), (err)=> {
-        err ? console.error(err) : console.log('File generated')
+        err ? console.error(err) : console.log('New README file generated')
     })
   });
 

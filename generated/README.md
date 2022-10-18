@@ -1,6 +1,6 @@
 
-    # adsf
-    ![Apache License ](https://img.shields.io/badge/license-Apache License -yellowg)
+    # asdf
+    undefined
 
     ## Description
     asdf
@@ -12,7 +12,7 @@
     * [Contributions](#contributions)
     * [Test](#tests)
     * [License](#license)
-    * [Contact](#contact)
+    * [Questions](#questions)
 
     ## Installation
     asdf
@@ -20,19 +20,16 @@
     ## Usage
     asdf
 
-    ## Contributions
+    ## Contributing
     asdf
 
     ## Tests
     asdf
 
     ## License 
-    Apache License  
-    //enter license function here
-    ![Apache License ](https://img.shields.io/badge/license-Apache License -yellowg) This project is Apache License  licensed.
+    Mozilla Public License 
+    undefined This project is Mozilla Public License
 
-    ## Github
-    asdf
-    
-    ## Email
-    asdf
+    ## Questions
+    * Github: https://github.com/asdf
+    * Email: adf
