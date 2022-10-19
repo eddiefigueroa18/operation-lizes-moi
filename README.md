@@ -24,7 +24,7 @@ This Application is an easy to use application that generates README files. This
 In the terminal type "node index.js" adn you will be prompted with several questions regarding the README file. Once you have responded to all questions, press enter and all answers will be inputted.
 
 ## Preview
-[Walk-through Video]()
+[Walk-through Video](https://drive.google.com/file/d/10w9sFErYDxafyWLIs3HMAIBvCedHVvAD/view)
 
 ![](./assets/Final%20preview.png)
 
