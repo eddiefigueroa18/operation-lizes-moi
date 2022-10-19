@@ -68,10 +68,6 @@ inquirer
             choices: [
                 'Apache',
                 'MIT',
-                'BSD 2-Clause',
-                'BSD 3-Clause',
-                'Boost Software',
-                'Creative Commons Zero v1.0 Universal',
                 'Eclipse',
                 'Mozilla',
                 'Other'
