@@ -1,9 +1,9 @@
 
-# This is a title
-![Eclipse](https://img.shields.io/badge/License-Eclipse-yellowg) This project is: Eclipse licensed.
-For more information regarding License, Refer to:  https://www.eclipse.org/legal/epl-2.0/
+# This is my title
+![Mozilla](https://img.shields.io/badge/License-Mozilla-yellowg) This project is: Mozilla licensed.
+For more information regarding License, Refer to:  https://www.mozilla.org/en-US/MPL/
 ## Description
-The description is described
+The description is short
 ## Table of Contents 
 * [Description](#Description)
 * [Installation](#Installation)
@@ -13,15 +13,15 @@ The description is described
 * [License](#License)
 * [Questions](#Questions)
 ## Installation
-there aree several instructions
+These are the requirements...
 ## Usage
-the use for this is to be used
+to be used
 ## Contributing
-me
+Me
 ## Tests
-you test it by testing it
+test it by testing it
 ## License 
-![Eclipse](https://img.shields.io/badge/License-Eclipse-yellowg) This project is: Eclipse licensed.
+![Mozilla](https://img.shields.io/badge/License-Mozilla-yellowg) This project is: Mozilla licensed.
 ## Questions
 For more information you can reach me through:
 * Github: https://github.com/eddiefigueroa18
