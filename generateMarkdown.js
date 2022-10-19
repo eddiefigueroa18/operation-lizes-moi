@@ -1,9 +1,5 @@
-// const { default: inquirer } = require("inquirer");
-
-//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
-
-//create a function that reutrns a license badge based on which license is passed in 
-//if thre is not license , return an empty string
+//create a function that returns a license badge based on which license is passed in 
+//if there is not license , return an empty string
 function renderLicenseBadge(license) {
 if(license === 'Other') {
     return ''
@@ -12,7 +8,25 @@ if(license === 'Other') {
 };
 };
 
-//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
+
+//create a function that returns a license link based on which license is passed in 
+//if there is not license , return an empty string
+function renderLicenseLink(license) {
+if(license === 'Other') {
+    return ''
+} else if (license === 'Apache') {
+    return ` https://apache.org/licenses/` 
+}  else if (license === 'MIT') {
+    return ` https://mit-license.org/`
+} else if (license === 'Eclipse') {
+    return ` https://www.eclipse.org/legal/epl-2.0/`
+} else if (license === 'Mozilla') {
+    return ` https://www.mozilla.org/en-US/MPL/`
+};
+};
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
 
 //create a function that returns the license section of README 
 //if there is no license, return an empty string
@@ -24,20 +38,21 @@ function renderLicenseSection(license) {
     }
 };
 
-//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
 
 //create a function to generate markdown for README
 function generateMarkdown(data) {
     return `
 # ${data.title}
-${renderLicenseBadge(data.license)} 
+${renderLicenseBadge(data.license)} This project is: ${data.license} licensed.
+For more information regarding License, Refer to: ${renderLicenseLink(data.license)}
 ## Description
 ${data.description}
 ## Table of Contents 
 * [Description](#Description)
 * [Installation](#Installation)
 * [Usage](#Usage)
-* [Contributions](#Contributing)
+* [Contributing](#Contributing)
 * [Test](#Tests)
 * [License](#License)
 * [Questions](#Questions)
@@ -50,13 +65,15 @@ ${data.contributionGuidelines}
 ## Tests
 ${data.tests}
 ## License 
-${renderLicenseSection(data.license)} This project is ${data.license} licensed.
+${renderLicenseSection(data.license)} This project is: ${data.license} licensed.
 ## Questions
+For more information you can reach me through:
 * Github: https://github.com/${data.github}
-* Email: ${data.email}`;
+* Email: ${data.email}
+    - For email, please give me your name and a brief description of your reason for contacting me `;
 }
 
-//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
 
 module.exports = generateMarkdown;
 
