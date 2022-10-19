@@ -1,4 +1,4 @@
-//create a function that returns a license badge based on which license is passed in 
+//create a function that returns a license BADGE based on which license is passed in 
 //if there is not license , return an empty string
 function renderLicenseBadge(license) {
 if(license === 'Other') {
@@ -10,8 +10,8 @@ if(license === 'Other') {
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
 
-//create a function that returns a license link based on which license is passed in 
-//if there is not license , return an empty string
+//create a function that returns a license LINK based on which license is passed in 
+//if there is not license, return an empty string
 function renderLicenseLink(license) {
 if(license === 'Other') {
     return ''
@@ -28,7 +28,7 @@ if(license === 'Other') {
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
 
-//create a function that returns the license section of README 
+//create a function that returns the license SECTION of README 
 //if there is no license, return an empty string
 function renderLicenseSection(license) {
     if(license === 'Other') {

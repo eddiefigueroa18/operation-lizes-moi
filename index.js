@@ -3,8 +3,6 @@ const inquirer = require ('inquirer');
 const fs = require ('fs');
 const generate = require('./generateMarkdown');
 
-// const { default: CheckboxPrompt } = require("inquirer/lib/prompts/checkbox");
-
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
 
 //Array of questions for user input 
@@ -36,11 +34,6 @@ inquirer
                 }
             }
         },
-        // {
-        //     type: "input",
-        //     message: "Add table of contents ",
-        //     name: "tableOfContents",
-        // },
         {
             type: "input",
             message: "Add Installation instructions/requirements ",

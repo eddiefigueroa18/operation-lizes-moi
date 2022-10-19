@@ -1,39 +1,44 @@
 # operation-lizes-moi
-README Generator
+![MIT](https://img.shields.io/badge/license-MIT-yellowg) This project is MIT licensed.
+For more information regarding License, Refer to: [MIT](https://mit-license.org/) 
 
-## Requirements for readme 
-Title
-Description 
-Table of contents (all of requirements in table of contents)
-Installation 
-Usage 
-License 
-Contributions
-Tests
-Questions
+## Description
+README files help the user understand what a project is trying to accomplish.
+This Application is an easy to use application that generates README files. This project will prompt the user through the terminal to add content into the README they would like to generate. The prompts include questions that are typical in a professional Readme such as, what is the title, description, installation requirements, usage, contributions, tests, licenses, etc. Once the user has finished answering the prompts, the new README file is generated. 
 
+## Table of Contents
+* [Description](#description)
+* [Installation](#installation)
+* [Usage](#usage)
+* [Preview](#preview)
+* [Contribution](#contribution)
+* [license](#license)
+* [Contact](#contact)
 
-## Requirements 
-description,
-installation instructions, 
-usage information, 
-contribution guidelines, 
-and test instructions
-license with dropdown menu
-contact info 
+## Installation 
+1. Install Node.js. Here is a link to their website: https://nodejs.org/en/
+2. Once Node.js is installed. Open up a terminal of the main folder location (operation-lizes-mois), type "npm i".
+3. After "npm i" has completed loading and all files are acquired. The program can be run by typing "node index.js".
 
-GIVEN a command-line application that accepts user input
-WHEN I am prompted for information about my application repository
-THEN a high-quality, professional README.md is generated with the title of my project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
-WHEN I enter my project title
-THEN this is displayed as the title of the README
-WHEN I enter a description, installation instructions, usage information, contribution guidelines, and test instructions
-THEN this information is added to the sections of the README entitled Description, Installation, Usage, Contributing, and Tests
-WHEN I choose a license for my application from a list of options
-THEN a badge for that license is added near the top of the README and a notice is added to the section of the README entitled License that explains which license the application is covered under
-WHEN I enter my GitHub username
-THEN this is added to the section of the README entitled Questions, with a link to my GitHub profile
-WHEN I enter my email address
-THEN this is added to the section of the README entitled Questions, with instructions on how to reach me with additional questions
-WHEN I click on the links in the Table of Contents
-THEN I am taken to the corresponding section of the README
+## Usage
+In the terminal type "node index.js" adn you will be prompted with several questions regarding the README file. Once you have responded to all questions, press enter and all answers will be inputted.
+
+## Preview
+[Walk-through Video]()
+
+![](./assets/Final%20preview.png)
+
+## Contribution
+* [Screencastify](https://www.screencastify.com/)
+* [Shields.io](https://shields.io/)
+* [Github](https://github.com/)
+
+## License 
+![MIT](https://img.shields.io/badge/license-MIT-yellowg) This project is MIT licensed.
+
+## Contact
+Eduardo Figueroa
+* Github: https://github.com/eddiefigueroa18)
+* Email: eddiefigueroa18@gmail.com
+
+© 2022 Echo Industries. Confidential and Proprietary. All Rights Reserved.
