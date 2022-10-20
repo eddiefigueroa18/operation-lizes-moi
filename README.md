@@ -38,7 +38,7 @@ In the terminal type "node index.js" and you will be prompted with several quest
 
 ## Contact
 Eduardo Figueroa
-* Github: https://github.com/eddiefigueroa18)
+* Github: https://github.com/eddiefigueroa18
 * Email: eddiefigueroa18@gmail.com
 
 © 2022 Echo Industries. Confidential and Proprietary. All Rights Reserved.
