@@ -13,13 +13,13 @@ The description is short
 * [License](#License)
 * [Questions](#Questions)
 ## Installation
-These are the requirements...
+These are the requirments...
 ## Usage
-to be used
+To be used
 ## Contributing
 Me
 ## Tests
-test it by testing it
+Test it by testing it
 ## License 
 ![Mozilla](https://img.shields.io/badge/License-Mozilla-yellowg) This project is: Mozilla licensed.
 ## Questions
