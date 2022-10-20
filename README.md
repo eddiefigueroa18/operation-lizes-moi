@@ -21,7 +21,7 @@ This Application is an easy to use application that generates README files. This
 3. After "npm i" has completed loading and all files are acquired. The program can be run by typing "node index.js".
 
 ## Usage
-In the terminal type "node index.js" adn you will be prompted with several questions regarding the README file. Once you have responded to all questions, press enter and all answers will be inputted.
+In the terminal type "node index.js" and you will be prompted with several questions regarding the README file. Once you have responded to all questions, press enter and all answers will be inputted.
 
 ## Preview
 [Walk-through Video](https://drive.google.com/file/d/10w9sFErYDxafyWLIs3HMAIBvCedHVvAD/view)
